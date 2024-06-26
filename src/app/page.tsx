@@ -1,11 +1,9 @@
 import Link from "next/link";
 
-import { Button } from "@/components";
-
 export default function Home() {
   return (
-    <section className="w-full">
-      <h1>Home</h1>
+    <section className="w-full px-4 xl:m-auto xl:w-[800px]">
+      <h1 className="font-bold text-2xl">Home</h1>
       <div className="flex items-center gap-4">
         <Link
           className="rounded bg-au-primary p-1"
