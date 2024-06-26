@@ -1,3 +1,12 @@
+## Important Statement
+1. 在實作 `getDefaultRoomAllocation` Fn 時，我有預設兩個立場：
+   1. 給出的 **Rooms** 必定滿足人數分配需求，不會發生一個大人多數小孩卻需要兩個以上房間的情況。
+   2. **adultPrice** 永遠大於 **childPrice**。
+2. 透過第一點的兩個預設，確認得出的初始分配為總金額最低的方案。
+3. `CustomInputNumber` 元件及 `getDefaultRoomAllocation` Fn 都有撰寫必要的單元測試。
+4. `CustomInputNumber` 滿足 Spec 上所有需求，但此專案在應用上，我透過 props 調整成我認為 UX 體驗最好的方式使用，如: readOnly。
+5. 根據文件需求，有不明確的部分，因為時間的關係沒進行詢問。
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
