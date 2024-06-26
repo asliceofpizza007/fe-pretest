@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header } from "@/components";
-import { AllocationProvider } from "@/context/allocation-context";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Header />
-        <AllocationProvider>
-          <main>{children}</main>
-        </AllocationProvider>
+        <main>{children}</main>
       </body>
     </html>
   );
